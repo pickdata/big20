@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>대출 연체 예상 조회</title>
+<div>
+	<h1>sitemesh head area</h1>
+</div>
+</head>
+<body>
+	<div>
+		<form action="result.html">
+			<table border="1">
+				<thead>
+					<tr>
+						<td>번호</td>
+						<td>항목</td>
+						<td>예상값</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>연령</td>
+						<td id="age"><input list="agelists" name="agelist">
+						 <datalist	id="agelists">
+								<option value="0">
+								<option value="20">
+								<option value="25">
+								<option value="30">
+								<option value="40">
+								<option value="45">
+								<option value="50">
+								<option value="55">
+								<option value="60">
+								<option value="65">
+								<option value="70">
+							</datalist></td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>성별</td>
+						<td id="sex"></td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>현재 은행 대출 총 건수</td>
+						<td id="c1"></td>
+					</tr>
+					<tr>
+						<td>4</td>
+						<td>현재 카드사/할부사/캐피탈 총 대출 건수</td>
+						<td id="c2"></td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>현재 2산업분류 총 대출 건수</td>
+						<td id="c3"></td>
+					</tr>
+					<tr>
+						<td>6</td>
+						<td>현재 기타 총 대출 건수</td>
+						<td id="c4"></td>
+					</tr>
+					<tr>
+						<td>7</td>
+						<td>현재 대출 총 금액</td>
+						<td id="c5"></td>
+					</tr>
+					<tr>
+						<td>8</td>
+						<td>현재 신용대출 총 금액</td>
+						<td id="c6"></td>
+					</tr>
+					<tr>
+						<td>9</td>
+						<td>현재 은행 대출 총 금액</td>
+						<td id="c7"></td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>신용대출 최근 개설일로부터 현재까지 유지기간</td>
+						<td id="c9"></td>
+					</tr>
+					<tr>
+						<td>11</td>
+						<td>2산업분류-신용대출 최근 개설일로부터 현재까지 유지기간</td>
+						<td id="c10"></td>
+					</tr>
+					<tr>
+						<td>12</td>
+						<td>현재 신용카드 개설 총 건수</td>
+						<td id="c11"></td>
+					</tr>
+					<tr>
+						<td>13</td>
+						<td>신용카드 최초 개설일로부터 현재까지 유지기간</td>
+						<td id="c12"></td>
+					</tr>
+					<tr>
+						<td>14</td>
+						<td>현재 보증 총 건수</td>
+						<td id="c13"></td>
+					</tr>
+					<tr>
+						<td>15</td>
+						<td>신용대출건수</td>
+						<td id="i9"></td>
+					</tr>
+					<tr>
+						<td>16</td>
+						<td>최초신용등급</td>
+						<td id="i16"></td>
+					</tr>
+					<tr>
+						<td>17</td>
+						<td>최근1년보험료연체율</td>
+						<td id="i19"></td>
+					</tr>
+					<tr>
+						<td>18</td>
+						<td>가구기납입보험료</td>
+						<td id="i30"></td>
+					</tr>
+					<tr>
+						<td>19</td>
+						<td>최근1년 실효해지건수</td>
+						<td id="i32"></td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>자동이체실패월수</td>
+						<td id="i33"></td>
+					</tr>
+					<tr>
+						<td>21</td>
+						<td>가구만기완납경험횟수</td>
+						<td id="i36"></td>
+					</tr>
+					<tr>
+						<td>22</td>
+						<td>월통화시간_분</td>
+						<td id="t1"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>월통화빈도</td>
+						<td id="t2"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>멤버쉽등급</td>
+						<td id="t3"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>가입자매출</td>
+						<td id="t4"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>납부요금</td>
+						<td id="t5"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>단말기가격</td>
+						<td id="t7"></td>
+					</tr>
+					<tr>
+						<td>23</td>
+						<td>납부일미준수횟수</td>
+						<td id="t11"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>납부방법</td>
+						<td id="t13"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>회선상태</td>
+						<td id="t14"></td>
+					</tr>
+					<tr>
+						<td>24</td>
+						<td>남은할부금</td>
+						<td id="t15"></td>
+					</tr>
+				</tbody>
+			</table>
+			<input type="submit">
+		</form>
+	</div>
+</body>
+<footer>
+	<div>
+		<h1>sitemesh footer area</h1>
+	</div>
+</footer>
+</html>
